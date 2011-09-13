@@ -1,3 +1,5 @@
-== SASS Version of Blueprint Typography ==
+# SASS Version of Blueprint Typography #
 
-See: http://www.blueprintcss.org/
+For details, see: 
+* http://www.blueprintcss.org/
+* http://sass-lang.com/
