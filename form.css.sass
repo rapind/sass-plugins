@@ -5,6 +5,9 @@ div.input
   label
     display: block
     font-weight: bold
+    &.boolean
+      float: left
+      margin-right: 10px
 
   .hint
     display: block
@@ -15,22 +18,34 @@ select
   border-width: 1px
   border-style: solid
 
-input[type=text], input[type=password], input[type=url], input[type=email], input.text, input.title, textarea, select
+input[type=text], input[type=password], input[type=url], input[type=email], input[type=tel], input.text, input.title, textarea, select
   margin: 0.5em 0
   padding: 5px
   background-color: #fff
   border: 1px solid #bbb
   color: #000
 
-input[type=text]:focus, input[type=password]:focus, input[type=url]:focus, input[type=email]:focus, input.text:focus, input.string:focus, textarea:focus, select:focus
+input[type=text]:focus, input[type=password]:focus, input[type=url]:focus, input[type=email]:focus, input[type=tel]:focus, input.text:focus, input.string:focus, textarea:focus, select:focus
   border-color: #666
 
 input[type=text], input[type=password], input[type=url], input[type=email], input.text, input.title, select
   width: 300px
 
+input[type=tel]
+  width: 150px
+
+input.long
+  width: 97%
+
 textarea
-  width: 390px
+  width: 97%
   height: 250px
+
+  &.brief
+    height: 100px
+
+  &.long
+    height: 350px
 
 .error, .alert, .notice, .success, .info
   padding: 0.8em
